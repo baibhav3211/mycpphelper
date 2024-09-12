@@ -1,0 +1,41 @@
+{
+  "name": "cpp-file-creator",
+  "displayName": "Cpp File Creator",
+  "version": "0.0.1",
+  "publisher": "Baibhav",
+  "description": "This extension is used for creating C++ files with templates.",
+  "engines": {
+    "vscode": "^1.63.0"
+  },
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "onCommand:extension.createCppFile"  
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.createCppFile",
+        "title": "Create C++ File"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/baibhav3211/mycpphelper"
+  },
+  "scripts": {
+    "vscode:prepublish": "tsc -b",
+    "compile": "tsc",
+    "watch": "tsc -w"
+  },
+  "keywords": [
+    "cpp",
+    "templates",
+    "vscode",
+    "cpphelper",
+    "C++"
+  ],
+  "author": "Baibhav",
+  "license": "MIT",
+  "icon": "iconcpp.png"
+}
